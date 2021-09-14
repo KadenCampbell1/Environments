@@ -1,6 +1,6 @@
 //Maya ASCII 2022 scene
 //Name: SpaceShip.ma
-//Last modified: Mon, Sep 13, 2021 12:23:54 PM
+//Last modified: Tue, Sep 14, 2021 11:35:29 AM
 //Codeset: 1252
 requires maya "2022";
 currentUnit -l centimeter -a degree -t film;
@@ -9,19 +9,19 @@ fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202106180615-26a94e7f8c";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19042)";
-fileInfo "UUID" "18BC057D-4717-A576-32A9-A3A16006B300";
+fileInfo "UUID" "CF345DDB-4767-BA4F-3C14-21A3CB5E96A3";
 createNode transform -s -n "persp";
 	rename -uid "F39DCF06-4062-6203-9179-0290BF2F8FFB";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 10.070230977617827 22.064499544989928 54.518968587203929 ;
-	setAttr ".r" -type "double3" -23.7383509380637 9.7999999999972474 359.99999999978598 ;
+	setAttr ".t" -type "double3" 25.209149934636248 20.142388722116937 38.204126563663941 ;
+	setAttr ".r" -type "double3" -23.738350938181942 396.59999999998234 359.99999999973392 ;
 	setAttr ".rp" -type "double3" -3.3306690738754696e-16 3.1086244689504383e-15 0 ;
 	setAttr ".rpt" -type "double3" 1.8968135462102877e-15 -4.0940682317084875e-16 -2.0832715626334326e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "21CBB0C2-4F67-B759-C0A2-449F87BA4F0E";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 53.890520911575457;
+	setAttr ".coi" 50.565523410781829;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -18214,7 +18214,7 @@ createNode mesh -n "Computer_GeoShape" -p "Computer_Geo";
 	setAttr ".gtag[13].gtagnm" -type "string" "topRing";
 	setAttr ".gtag[13].gtagcmp" -type "componentList" 1 "e[32:51]";
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 9024 ".uvst[0].uvsp";
+	setAttr -s 9090 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.375 0 0.625 0 0.375 0.25
 		 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0 0.875
 		 0.25 0.125 0 0.125 0.25 0.375 0.3125 0.38749999 0.3125 0.38749999 0.68843985 0.375
@@ -19674,11 +19674,21 @@ createNode mesh -n "Computer_GeoShape" -p "Computer_Geo";
 		 0.91666669 0.73333335 0.91666669 0.66666669 0.875 1 0.83333331 1 0.83333331 0.93333334
 		 0.875 0.93333334 0.875 0.80000001 0.875 0.86666667 0.83333331 0.86666667 0.83333331
 		 0.80000001 0.79166669 0.80000001 0.79166669 0.86666667;
-	setAttr ".uvst[0].uvsp[9000:9023]" 0.79166669 1 0.79166669 0.93333334 1 0.80000001
+	setAttr ".uvst[0].uvsp[9000:9089]" 0.79166669 1 0.79166669 0.93333334 1 0.80000001
 		 1 0.86666667 0.95833331 0.86666667 0.95833331 0.80000001 0.91666669 0.86666667 0.91666669
 		 0.80000001 0.91666669 1 0.91666669 0.93333334 0.375 0 0.375 0.25 0.625 0.25 0.625
 		 0 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0.25 0.875 0 0.125
-		 0 0.125 0.25;
+		 0 0.125 0.25 0.375 0.375 0.375 0.3125 0.375 0.3125 0.375 0.375 0.375 0.4375 0.375
+		 0.4375 0.375 0.3125 0.375 0.25 0.375 0.25 0.375 0.25 0.375 0.25 0.375 0.3125 0.375
+		 0.3125 0.375 0.3125 0.375 0.4375 0.375 0.375 0.375 0.375 0.375 0.375 0.375 0.375
+		 0.375 0.4375 0.375 0.4375 0.375 0.4375 0.375 0.375 0.375 0.3125 0.375 0.3125 0.375
+		 0.375 0.375 0.3125 0.375 0.3125 0.375 0.3125 0.375 0.3125 0.375 0.3125 0.375 0.375
+		 0.375 0.375 0.375 0.3125 0.375 0.375 0.375 0.375 0.375 0.375 0.375 0.375 0.375 0.4375
+		 0.375 0.4375 0.375 0.4375 0.375 0.4375 0.375 0.375 0.375 0.3125 0.375 0.3125 0.375
+		 0.375 0.375 0.3125 0.375 0.3125 0.375 0.3125 0.375 0.3125 0.375 0.3125 0.375 0.375
+		 0.375 0.375 0.375 0.3125 0.375 0.375 0.375 0.375 0.375 0.375 0.375 0.375 0.375 0.4375
+		 0.375 0.4375 0.375 0.4375 0.375 0.4375 0.375 0.4375 0.375 0.4375 0.375 0.4375 0.375
+		 0.4375;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
@@ -27800,13 +27810,13 @@ createNode mesh -n "Computer_GeoShape" -p "Computer_Geo";
 		f 4 4440 4454 -4461 -4451
 		mu 0 4 4557 4563 4578 4572
 		f 4 -4573 4574 4576 -4578
-		mu 0 4 4580 4573 4576 4581
+		mu 0 4 9024 9025 9026 9027
 		f 4 4443 4462 -4464 -4457
 		mu 0 4 4562 4568 4583 4577
 		f 4 -4446 4464 4465 -4463
 		mu 0 4 4568 4569 4584 4583
 		f 4 -4581 4582 4584 -4586
-		mu 0 4 4585 4579 4582 4586
+		mu 0 4 4585 9028 9029 4586
 		f 4 4449 4468 4588 -4468
 		mu 0 4 4571 4570 4587 4588
 		f 4 4451 4470 4605 -4469
@@ -27860,35 +27870,35 @@ createNode mesh -n "Computer_GeoShape" -p "Computer_Geo";
 		f 4 -4465 4515 4521 -4520
 		mu 0 4 4584 4569 4613 4615
 		f 4 -4493 4522 4524 -4524
-		mu 0 4 4559 4555 4616 4617
+		mu 0 4 9030 9031 4616 4617
 		f 4 4494 4525 -4527 -4523
-		mu 0 4 4555 4571 4618 4616
+		mu 0 4 9032 9033 4618 4616
 		f 4 4496 4527 -4529 -4526
-		mu 0 4 4571 4590 4619 4618
+		mu 0 4 9034 9035 4619 4618
 		f 4 -4498 4523 4529 -4528
-		mu 0 4 4590 4559 4617 4619
+		mu 0 4 9036 9037 4617 4619
 		f 4 -4501 4530 4532 -4532
-		mu 0 4 4612 4566 4620 4621
+		mu 0 4 9038 9039 4620 4621
 		f 4 4502 4533 -4535 -4531
-		mu 0 4 4566 4595 4622 4620
+		mu 0 4 9040 9041 4622 4620
 		f 4 4504 4535 -4537 -4534
-		mu 0 4 4595 4614 4623 4622
+		mu 0 4 9042 9043 4623 4622
 		f 4 -4506 4531 4537 -4536
-		mu 0 4 4614 4612 4621 4623
+		mu 0 4 9044 9045 4621 4623
 		f 4 -4509 4538 4540 -4540
-		mu 0 4 4566 4559 4617 4620
+		mu 0 4 9046 9047 9048 9049
 		f 4 4510 4541 -4543 -4539
-		mu 0 4 4559 4590 4619 4617
+		mu 0 4 9050 9051 9052 9053
 		f 4 4512 4543 -4545 -4542
-		mu 0 4 4590 4595 4622 4619
+		mu 0 4 9054 9055 9056 9057
 		f 4 -4514 4539 4545 -4544
-		mu 0 4 4595 4566 4620 4622
+		mu 0 4 9058 9059 9060 9061
 		f 4 -4517 4546 4548 -4548
-		mu 0 4 4613 4612 4621 4624
+		mu 0 4 4613 4612 9062 4624
 		f 4 4518 4549 -4551 -4547
-		mu 0 4 4612 4614 4623 4621
+		mu 0 4 4612 4614 9063 9064
 		f 4 4520 4551 -4553 -4550
-		mu 0 4 4614 4615 4625 4623
+		mu 0 4 4614 4615 4625 9065
 		f 4 -4522 4547 4553 -4552
 		mu 0 4 4615 4613 4624 4625
 		f 4 -4525 4554 4556 -4556
@@ -27908,19 +27918,19 @@ createNode mesh -n "Computer_GeoShape" -p "Computer_Geo";
 		f 4 -4538 4563 4569 -4568
 		mu 0 4 4623 4621 4579 4582
 		f 4 -4541 4570 4572 -4572
-		mu 0 4 4620 4617 4573 4580
+		mu 0 4 9066 9067 9068 9069
 		f 4 4542 4573 -4575 -4571
-		mu 0 4 4617 4619 4576 4573
+		mu 0 4 9070 9071 9072 9073
 		f 4 4544 4575 -4577 -4574
-		mu 0 4 4619 4622 4581 4576
+		mu 0 4 9074 9075 9076 9077
 		f 4 -4546 4571 4577 -4576
-		mu 0 4 4622 4620 4580 4581
+		mu 0 4 9078 9079 9080 9081
 		f 4 -4549 4578 4580 -4580
-		mu 0 4 4624 4621 4579 4585
+		mu 0 4 4624 9082 9083 4585
 		f 4 4550 4581 -4583 -4579
-		mu 0 4 4621 4623 4582 4579
+		mu 0 4 9084 9085 9086 9087
 		f 4 4552 4583 -4585 -4582
-		mu 0 4 4623 4625 4586 4582
+		mu 0 4 9088 4625 4586 9089
 		f 4 -4554 4579 4585 -4584
 		mu 0 4 4625 4624 4585 4586
 		f 4 -4589 4586 -4470 -4588
@@ -35504,19 +35514,19 @@ createNode nurbsCurve -n "nurbsCircleShape1" -p "nurbsCircle1";
 	setAttr -k off ".v";
 	setAttr ".tw" yes;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "CA075F81-4F4D-9238-4270-098F3A493AB0";
+	rename -uid "29D79ABD-41A2-E85F-8977-E497390FBE6F";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "512D500C-4B5B-CCEE-3340-6B95389A21DE";
+	rename -uid "9F2DBCE0-4EA7-8B31-2FA7-2ABEB11EA6E7";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "6D06C3D2-4FA2-7A96-90E8-D3A632837AE3";
+	rename -uid "83CAA479-4E9B-ADA5-743A-E5BB746D2E28";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "DFB07C56-4242-400A-8C50-47B03646260E";
+	rename -uid "F883E3A8-4732-1206-C7AF-548C67B04125";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "3FA1B42A-4E78-FDE3-F07C-F1AA1A51D25B";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "ADEEEF8F-40B5-F9D3-0D9F-0C94A62E6ACB";
+	rename -uid "B908E3FA-4CB2-E23D-71DA-5AB455A423E0";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "B0F10999-473B-EF00-FE7E-47ACCDE06736";
 	setAttr ".g" yes;
@@ -35655,8 +35665,6 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "groupId28.id" "ShipBase_GeoShape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "ShipBase_GeoShape.iog.og[0].gco";
 connectAttr "groupId10.id" "TriangleSheild_Geo11Shape.iog.og[0].gid";
