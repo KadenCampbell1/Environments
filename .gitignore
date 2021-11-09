@@ -70,3 +70,5 @@ SpeedtreeFiles/
 *.hbjson
 
 HDRIs/
+
+HoudiniFiles/render/
