@@ -59,16 +59,13 @@ sysinfo.txt
 crashlytics-build.properties
 
 
-HoudiniFiles/Cache/
-
-HoudiniFiles/geo/
-
-HoudiniFiles/nebula.abc
-
-SpeedtreeFiles/
 
 *.hbjson
 
-HDRIs/
+ProjectCollections/TheWitness/HoudiniFiles/Cache/
 
-HoudiniFiles/render/
+ProjectCollections/TheWitness/HoudiniFiles/render/
+
+ProjectCollections/NineBetween/geo/
+
+ProjectCollections/NineBetween/render/
